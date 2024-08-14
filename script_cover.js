@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let imageInterval; // 이미지 전환 인터벌 변수
 
     function changeImage() {
-        if (count < totalSwitches * 2) { // 총 전환 횟수 계산
+        if (count < totalSwitches * 6) { // 총 전환 횟수 계산
             document.getElementById('display-image').src = images[index];
             index = (index + 1) % images.length; // 이미지 인덱스를 배열 길이로 나누어 교체
             count++; // 전환 횟수 증가
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const typingText = document.querySelectorAll('.typing-text');
     let currentPart = 0;
     let currentChar = 0;
-    const typingSpeed = 100; // 타이핑 속도 (ms)
+    const typingSpeed = 50; // 타이핑 속도 (ms)
 
     function typeEffect() {
         const text = typingText[currentPart].getAttribute('data-text'); // data-text 속성에서 텍스트 가져오기

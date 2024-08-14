@@ -171,7 +171,7 @@ function showGeoJSON(prefix) {
 
     if (prefix === 'geojson') {
         // Red polygon
-        loadGeoJSON('geojson/Bldg1/Bldg1.geojson', 'geojson-layer-1', 'polygon', '#FF0000');
+        loadGeoJSON('geojson/Bldg1/Bldg1.geojson', 'geojson-layer-1', 'polygon', '#eb157f');
 
         // Yellow lines
         loadGeoJSON('geojson/Bldg1/Walk5.geojson', 'geojson-layer-2', 'line-dash', '#7c6487');
@@ -199,7 +199,7 @@ function showGeoJSON(prefix) {
         });
     } else if (prefix === 'geojson2') {
         // Red polygon
-        loadGeoJSON('geojson/Bldg2/Bldg2.geojson', 'geojson-layer-1', 'polygon', '#6523f6');
+        loadGeoJSON('geojson/Bldg2/Bldg2.geojson', 'geojson-layer-1', 'polygon', '#4215eb');
 
         // Yellow lines
         loadGeoJSON('geojson/Bldg2/Walk5.geojson', 'geojson-layer-2', 'line-dash', '#7c6487');

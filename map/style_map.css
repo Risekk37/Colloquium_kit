@@ -8,7 +8,7 @@ body {
 #button-container {
     position: absolute;
     top: 22vh;
-    left: 20.5vw;
+    left: 5.5vw;
     z-index: 2;
 }
 
@@ -31,7 +31,7 @@ body {
 #map {
     position: absolute;
     top: 22vh;
-    left: 20.2vw;
+    left: 5.2vw;
     width: 45vw;
     height: 59vh;
     z-index: 1;
@@ -41,7 +41,7 @@ body {
 #score {
     position: absolute;
     top: 22vh;
-    left: 65vw;
+    left: 50vw;
     width: 15vw;
     height: 59vh;
     background-color: rgb(0, 0, 0);
@@ -54,7 +54,7 @@ body {
 #score0 {
     position: absolute;
     top: 22vh;
-    left: 65vw;
+    left: 50vw;
     width: 15vw;
     height: 59vh;
     background-color: rgb(0, 0, 0);
@@ -67,7 +67,7 @@ body {
 #score2 {
     position: absolute;
     top: 22vh;
-    left: 65vw;
+    left: 50vw;
     width: 15vw;
     height: 59vh;
     background-color: rgb(0, 0, 0);
@@ -75,56 +75,6 @@ body {
     white-space: pre;
     font-size: 1vw;
     border-radius: 2vh;
-}
-
-#image-container {
-    position: absolute;
-    left: 3vw;
-    top: 15vh;
-    z-index: 2;
-    display: flex;
-    flex-direction: column; /* 세로 방향으로 배치 */
-    align-items: center; /* 가로 방향 가운데 정렬 */
-}
-
-
-#image-container img {
-    display: block;
-    height: auto; /* 기본 높이 자동 조정 */
-}
-
-#bottom-image-container {
-    display: flex; /* 이미지 2와 3을 수평으로 배치 */
-}
-
-#top-image-container img {
-    display: block;
-    height: 28vh; /* 기본 높이 자동 조정 */
-    margin-bottom: 1vh;
-}
-
-#bottom-image-container img {
-    display: block;
-    height: 28vh; /* 기본 높이 자동 조정 */
-    margin-top: 1vh;
-}
-
-/* 개별 이미지 크기 조정 */
-#image1 {
-    width: 30vw; /* 원하는 크기로 조정 */
-    height: 30vh;
-}
-
-#image2 {
-    width: 14.5vw; /* 원하는 크기로 조정 */
-    height: 14.5vh;
-    margin-right:.5vw;
-}
-
-#image3 {
-    width: 14.5vw; /* 원하는 크기로 조정 */
-    height: 14.5vh;
-    margin-left:.5vw;
 }
 
 #Title {
@@ -138,7 +88,7 @@ body {
 }
 #Number{
     position: absolute;
-    left: 57vw;
+    left: 42vw;
     top: 23vh; 
     z-index: 10;
     background-color: #000000;
@@ -279,7 +229,7 @@ body {
 #recomandation {
     position: absolute;
     top: 68vh;
-    left: 22vw;
+    left: 7vw;
     font-family: helvetica;
     z-index:10;
     background-color: rgba(255, 255, 255,1);
@@ -358,4 +308,31 @@ body {
     width: 100vw;
     height: 90vh;
     z-index: 0;
+    left:-15vw;
   }
+
+#description {
+    position: absolute;
+    top: 55vh;
+    left: 68vw;
+    margin: 5vw;
+    z-index: 0;
+    font-family: helvetica;
+    white-space: pre-wrap;
+    font-size:0.8vw;
+    color: #413f38;
+}
+
+#description-2 {
+    position: absolute;
+    top: 71vh;
+    left: 67vw;
+    margin: 5vw;
+    z-index: 0;
+    font-family: helvetica;
+    white-space: pre-wrap;
+    font-size:0.7vw;
+    color: #7f7267;
+}
+
+

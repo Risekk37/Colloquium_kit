@@ -3,13 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.container');
     let currentImageIndex = 0;
 
+    // Hide text descriptions initially
+    const textDescriptionLeft = document.querySelector('.text-description-left');
+    const textDescriptionRight = document.querySelector('.text-description-right');
+    textDescriptionLeft.style.display = 'none';
+    textDescriptionRight.style.display = 'none';
+
     // Function to show images in sequence
     function showNextImage() {
         if (currentImageIndex < images.length) {
             images[currentImageIndex].style.display = 'block';
+            if (currentImageIndex === 3) { // When G4 or R4 is shown
+                if (images[currentImageIndex].src.includes('G4.png')) {
+                    textDescriptionLeft.style.display = 'block';
+                } else if (images[currentImageIndex].src.includes('R4.png')) {
+                    textDescriptionRight.style.display = 'block';
+                }
+            }
             currentImageIndex++;
         } else {
-            // All images have been shown, show the container and hide sequence images
             container.style.visibility = 'visible';
             images.forEach(img => img.style.display = 'none');
         }
@@ -42,16 +54,21 @@ document.addEventListener('DOMContentLoaded', () => {
         const spans = panel.querySelectorAll('.highlight span');
 
         if (clickCount === 0) {
-            // Toggle span highlight color
             panel.classList.toggle('clicked');
             images.forEach(img => img.style.display = 'none'); // Hide images
         } else if (clickCount < 5) {
-            // Hide span highlights and show image
             panel.classList.remove('clicked');
             images.forEach(img => img.style.display = 'none'); // Hide all images
             const imageToShow = panel.querySelector(`.panel-image[data-index="${clickCount - 1}"]`);
             if (imageToShow) {
                 imageToShow.style.display = 'block'; // Show the current image
+            }
+
+            // Show text descriptions when G4 or R4 is shown
+            if (clickCount === 4 && imagePrefix === 'G') {
+                textDescriptionLeft.style.display = 'block';
+            } else if (clickCount === 4 && imagePrefix === 'R') {
+                textDescriptionRight.style.display = 'block';
             }
         }
     }

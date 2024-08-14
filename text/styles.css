@@ -151,3 +151,31 @@ body, html {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transform: translateY(1px);
 }
+
+.text-description-left {
+    position: absolute; /* Allows for positioning within the panel */
+    font-size: 1vw;
+    font-family: helvetica;
+    color:#5f5f5f;
+    top: 75vh; /* Adjust as needed */
+    left: 7vw; /* Adjust as needed */
+    width: 50vw; /* Adjust to fit within the panel */
+     /* Adjust to fit content */
+    z-index: 10; /* Ensure it's above other content */
+    white-space: pre-wrap;
+    display:none;    
+}
+
+.text-description-right {
+    position: absolute; /* Allows for positioning within the panel */
+    font-size: 1vw;
+    font-family: helvetica;
+    color:#5f5f5f;
+    top: 75vh; /* Adjust as needed */
+    left: 56vw; /* Adjust as needed */
+    width: 50vw; /* Adjust to fit within the panel */
+     /* Adjust to fit content */
+    z-index: 10; /* Ensure it's above other content */
+    white-space: pre-wrap;
+    display:none;    
+}
